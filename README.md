@@ -1,16 +1,30 @@
-# React + Vite
+# Bucheen - Modern Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bu proje, modern UI/UX tasarım prensiplerine uygun olarak geliştirilmiş, tamamen duyarlı (responsive) bir web açılış sayfasıdır (landing page). Çeşitli cihaz boyutlarına (mobil, tablet, masaüstü) kusursuz uyum sağlayacak şekilde kodlanmıştır.
 
-Currently, two official plugins are available:
+## 🚀 Teknolojiler ve Araçlar
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **React:** Kullanıcı arayüzü inşası ve bileşen (component) yönetimi.
+- **Tailwind CSS:** Hızlı ve esnek stil yapılandırması, responsive tasarım ve özel tasarım token'larının (renkler, fontlar) uygulanması.
+- **React Icons:** Proje genelindeki vektörel ikonların (navigasyon, iletişim, değerlendirme yıldızları) entegrasyonu.
 
-## React Compiler
+## 📁 Mimari ve Klasör Yapısı
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Proje, sürdürülebilirliği ve ölçeklenebilirliği en üst düzeye çıkarmak için **özellik odaklı (feature-based)** modüler bir klasör yapısı kullanılarak inşa edilmiştir. Geleneksel kategori tabanlı organizasyon yerine, projenin her bir ana bölümü kendi bağımsız klasöründe kapsüllenmiştir.
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```text
+src/
+├── assets/
+├── components/
+│   └── Container.jsx
+├── features/
+│   ├── About/
+│   ├── Footer/
+│   ├── Hero/
+│   ├── HowItWorks/
+│   ├── Navigation/
+│   ├── Phonemockup/
+│   ├── PopularProfiles/
+│   └── Testimonials/
+├── App.jsx
+└── main.jsx
