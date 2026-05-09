@@ -16,14 +16,14 @@ Proje, sürdürülebilirliği ve ölçeklenebilirliği en üst düzeye çıkarma
 src/
 ├── assets/
 ├── components/
-│   └── Container.jsx
+│   ├── Container.jsx
+│   └── PhoneMockup.jsx
 ├── features/
 │   ├── About/
 │   ├── Footer/
 │   ├── Hero/
 │   ├── HowItWorks/
 │   ├── Navigation/
-│   ├── Phonemockup/
 │   ├── PopularProfiles/
 │   └── Testimonials/
 ├── App.jsx
